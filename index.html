@@ -1,76 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Bus Reservation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>🚌 Bus Reservation System</h1>
-</header>
-<nav class="nav">
-    <button>Login</button>
-    <button>SingUp</button>
-</nav>
-<section class="search">
-    <h2>Search Bus</h2>
-    <form>
-        <input type="text" placeholder="From">
-        <input type="text" placeholder="To">
-        <input type="date">
-        <button type="submit">Search</button>
-    </form>
-</section>
+    <header>
+        <h1>🚌 Bus Reservation System</h1>
 
-<section class="bus-list">
-    <h2>Available Buses</h2>
+        <nav class="nav">
+            <a href="#login" class="btn">Login</a>
+            <a href="#signup" class="btn">Sign Up</a>
+        </nav>
+    </header>
 
-    <div class="bus-card">
-        <h3>Volvo AC Sleeper</h3>
-        <p>Time: 10:00 PM</p>
-        <p>Fare: ₹1200</p>
-        <button>Book Now</button>
+    <div id="login" class="auth-modal">
+        <div class="auth-glass">
+            <a href="#" class="close">✖</a>
+            <h2>Login</h2>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </div>
     </div>
 
-    <div class="bus-card1">
-        <h3>Express Non-AC</h3>
-        <p>Time: 7:30 AM</p>
-        <p>Fare: ₹650</p>
-        <button>Book Now</button>
+    <div id="signup" class="auth-modal">
+        <div class="auth-glass">
+            <a href="#" class="close">✖</a>
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <button>Create Account</button>
+        </div>
     </div>
-</section>
 
-<section class="seats">
-    <h2>Select Seats</h2>
-    <div class="seat-layout">
-        <div class="seat booked">1</div>
-        <div class="seat">2</div>
-        <div class="seat">3</div>
-        <div class="seat booked">4</div>
-        <div class="seat">5</div>
-        <div class="seat">6</div>
-    </div>
-</section>
+    <section class="search">
+        <h2>Search Bus</h2>
+        <form>
+            <input type="text" placeholder="From">
+            <input type="text" placeholder="To">
+            <input type="date">
+            <input type="time">
+            <button type="submit">Search</button>
+        </form>
+    </section>
 
-<section class="booking">
-    <h2>Passenger Details</h2>
-    <form>
-        <input type="text" placeholder="Full Name">
-        <input type="number" placeholder="Age">
-        <input type="text" placeholder="Phone Number">
-        <button type="submit">Confirm Booking</button>
-    </form>
-</section>
-<div class="container">
-   <!-- all your content here -->
-</div>
+    <section class="bus-list">
+        <h2>Available Buses</h2>
 
+        <div class="bus-card">
+            <h3>Volvo AC Sleeper</h3>
+            <p>Time: 10:00 PM</p>
+            <p>Fare: ₹1200</p>
+            <button>Book Now</button>
+        </div>
+        <br>
+        <div class="bus-card">
+            <h3>Express Non-AC</h3>
+            <p>Time: 7:30 AM</p>
+            <p>Fare: ₹650</p>
+            <button>Book Now</button>
+        </div>
+        <br>
+        <div class="bus-card">
+            <h3>Semi Sleeper</h3>
+            <p>Time: 8:00 PM</p>
+            <p>Fare: ₹800</p>
+            <button>Book Now</button>
+        </div>
+        <br>
+        <div class="bus-card">
+            <h3>Super Deluxe / Luxury</h3>
+            <p>Time: 10:30 PM</p>
+            <p>Fare: ₹1700</p>
+            <button>Book Now</button>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2025 Bus Reservation System</p>
-</footer>
+    <section class="seats">
+        <h2>Select Seats</h2>
+        <div class="seat-layout">
+            <div class="seat booked">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat booked">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+            <div class="seat booked">9</div>
+            <div class="seat">10</div>
+        </div>
+    </section>
 
+    <section class="booking">
+        <h2>Passenger Details</h2>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Age">
+            <input type="text" placeholder="Phone Number">
+            <input type="email" placeholder="Email">
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Bus Reservation System</p>
+    </footer>
 </body>
+
 </html>
